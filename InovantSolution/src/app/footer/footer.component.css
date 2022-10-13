@@ -1,0 +1,55 @@
+footer {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    font-family: emoji;
+    padding: 50px 70px;
+}
+
+.custom .row h4 {
+    padding-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+}
+
+.cards img {
+    height: 25px;
+    margin: 0px 10px;
+    border-radius: 3px;
+}
+
+.newsletter button {
+    width: 200px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 5px;
+    color: #fff;
+    border: solid 1px
+}
+
+.newsletter button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.newsletter input {
+    padding: 8px 10px;
+    margin-top: 10px;
+    margin-left: -1px;
+    width: 106%;
+}
+
+.contact i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.follow li a i {
+    color: #fff;
+    border: solid 1px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px
+}

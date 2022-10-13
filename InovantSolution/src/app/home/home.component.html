@@ -1,0 +1,71 @@
+<div class="container mt-5" style="font-family:emoji">
+    <h4 style="font-weight: 700">welcome, please log in/ create account</h4>
+    <div class="custom row mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">log in</h5>
+                    <form [formGroup]="loginDetails" (ngSubmit)="doLogin()">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" name="email" placeholder="email address{{asterk}}" formControlName="email">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" name="password" placeholder="password{{asterk}}" formControlName="password">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input">
+                            <label class="form-check-label">remember me</label>
+                            <a href="#" style="float: right;color: #000;">forget password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary">login</button>
+                    </form>
+                    <br>
+                    <h3 style="text-align: center;">or</h3>
+                    <br>
+                    <div class="btnn">
+                        <button class="fb"><i class="fa-brands fa-facebook-f" style="font-size: 20px;padding-right: 10px"></i><span>sign in with facebook</span></button>
+                        <button class="gbtn"><img src="../../assets/img/google.png" style="padding-right: 10px" alt="google" height="20px"><span>sign in with google</span></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">create an account</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="full name{{asterk}}">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="email address{{asterk}}">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="password{{asterk}}">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="confirm password{{asterk}}">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="interests{{asterk}}">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="preferred size{{asterk}}">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" style="background-color:none ;">
+                            <label class="form-check-label" for="exampleCheck1">newsletter</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" style="background-color:none ;">
+                            <label class="form-check-label" for="exampleCheck1">by registering you agree our t&c and privacy policy</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">create account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

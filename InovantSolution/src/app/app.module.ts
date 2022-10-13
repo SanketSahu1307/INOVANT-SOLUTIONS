@@ -29,7 +29,7 @@ import { OshApiService } from './services/osh-api.service';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [OshApiService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

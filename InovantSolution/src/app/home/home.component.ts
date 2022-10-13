@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
       this.userDetails=res;
       console.log(this.userDetails.data);
       this.route.navigate(['/profile'])
-      this.oshServ.sendResponse.next(this.userDetails.data)
+      localStorage.setItem('users',JSON.stringify(this.userDetails.data))
     }, err => {
       alert("Something Went Wrong...Please try Sometime Later...")
       console.log(err);

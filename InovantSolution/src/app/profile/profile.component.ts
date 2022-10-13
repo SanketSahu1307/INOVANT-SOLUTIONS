@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { OshApiService } from '../services/osh-api.service';
 
 @Component({
   selector: 'app-profile',
@@ -9,22 +8,16 @@ import { OshApiService } from '../services/osh-api.service';
 export class ProfileComponent implements OnInit {
 
   user:any
-  constructor(private oshServ:OshApiService) { }
+  constructor() { }
 
   ngOnInit() {
    this.getDetail();
   }
 
   getDetail(){
-    
-    this.oshServ.sendResponse.subscribe(res=>{
-      this.user=res
-      console.log(this.user); 
-      
-    }),err=>{
-      console.log(err);
-      
-    }
+    const users=localStorage.getItem('users');
+    this.user=JSON.parse(users)
+    console.log('users',JSON.parse(users));
   }
 
 }
